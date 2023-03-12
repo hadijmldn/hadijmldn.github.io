@@ -183,11 +183,11 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "His skills and expertise in developing the FiveM server have been incredibly helpful in addressing our needs, and he has gone above and beyond to ensure that our server runs smoothly and efficiently.",
       name: "Yogaz Satria",
       designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
+      company: "Indotribes Roleplay",
+      image: "../assets/yogaz.png",
     },
     {
       testimonial:
