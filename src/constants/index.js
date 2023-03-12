@@ -159,7 +159,7 @@ import {
     // },
     {
       title: "Full stack Developer",
-      company_name: "Meta",
+      company_name: "Freelance",
       icon: meta,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present ",
