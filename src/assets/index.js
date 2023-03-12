@@ -32,6 +32,7 @@ import fivem from "./company/fivem.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import yogaz from "./yogaz.png";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   lua,
   laravel,
   fivem,
+  yogaz,
 };

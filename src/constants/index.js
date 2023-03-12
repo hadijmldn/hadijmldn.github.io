@@ -26,6 +26,7 @@ import {
     laravel,
     lua,
     fivem,
+    yogaz,
   } from "../assets";
   
   export const navLinks = [
@@ -187,7 +188,7 @@ import {
       name: "Yogaz Satria",
       designation: "COO",
       company: "Indotribes Roleplay",
-      image: "../assets/yogaz.png",
+      image: yogaz,
     },
     {
       testimonial:
