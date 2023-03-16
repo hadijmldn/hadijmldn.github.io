@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import {styles} from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas, ProfileCanvas } from './canvas';
 import { profile } from '../assets';
-import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Hero = () => {
   return (
@@ -19,15 +18,30 @@ const Hero = () => {
               I'm Web Developer, User <br className='' /> interfaces, and FiveM Developer
           </p>
           <div className={`${styles.paddingX} absolute
-      inset-0 top-[20px] left-[1300px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
-        <img src={profile} alt=""  className='sm:block hidden w-25 h-25'/>
+      inset-0 top-[50px] left-[700px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
+        {/* <motion.div
+          OrbitControls= {false}
+          Sphere={{ 
+            args: [1, 100, 200],
+            scale: 2.5
+           }} 
+          MeshDistortMaterial={{ 
+            color: "#3d1c56",
+            attach: "material",
+            distort: 0.5,
+            speed: 1
+           }}
+           transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className='w-3 h-3 rounded-full bg-secondary mb-1'
+        /> */}
         </div>
         </div>
         </div>
-
-
-        <ComputersCanvas />
-        
+        <ProfileCanvas />
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
@@ -44,6 +58,9 @@ const Hero = () => {
             />
           </div>
         </a>
+      </div>
+      <div className='mt-20 flex flex-wrap gap-10'>
+      <ComputersCanvas />
       </div>
     </section>
   );

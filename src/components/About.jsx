@@ -1,6 +1,7 @@
 import React from 'react';
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import { ComputersCanvas } from './canvas';
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -55,12 +56,13 @@ const About = () => {
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
-
+     
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      
     </>
     
   );
