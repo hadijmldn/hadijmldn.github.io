@@ -33,6 +33,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import yogaz from "./yogaz.png";
+import profile from "./profile.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   laravel,
   fivem,
   yogaz,
+  profile,
 };
