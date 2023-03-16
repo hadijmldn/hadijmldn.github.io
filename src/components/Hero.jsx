@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import {styles} from '../styles';
 import { ComputersCanvas } from './canvas';
+import { profile } from '../assets';
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Hero = () => {
   return (
@@ -11,12 +13,15 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-[#1d82e0]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient"/>
         </div>
-
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#4aa7f3]">Hadi</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I'm Web Developer, User <br className='sm:block hidden' /> interfaces, and FiveM Developer
+              I'm Web Developer, User <br className='' /> interfaces, and FiveM Developer
           </p>
+          <div className={`${styles.paddingX} absolute
+      inset-0 top-[20px] left-[1300px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
+        <img src={profile} alt=""  className='sm:block hidden w-25 h-25'/>
+        </div>
         </div>
         </div>
 
