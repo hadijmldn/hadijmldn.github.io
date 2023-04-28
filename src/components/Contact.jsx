@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { StarsCanvas }  from "./canvas";
 
 const Contact = () => {
   const formRef = useRef();
@@ -39,7 +40,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Hadi Jamaludin",
           from_email: form.email,
-          to_email: "hadijmldn@live.com",
+          to_email: "hadijamaludin9999@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -130,6 +131,7 @@ const Contact = () => {
         <EarthCanvas />
       </motion.div>
     </div>
+    
   );
 };
 

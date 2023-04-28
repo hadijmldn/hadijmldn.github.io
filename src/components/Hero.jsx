@@ -18,7 +18,8 @@ const Hero = () => {
               I'm Web Developer, User <br className='' /> interfaces, and FiveM Developer
           </p>
           <div className={`${styles.paddingX} absolute
-      inset-0 top-[50px] left-[700px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
+      inset-0 top-[20px] left-[-1300px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
+        
         {/* <motion.div
           OrbitControls= {false}
           Sphere={{ 
@@ -41,13 +42,16 @@ const Hero = () => {
         </div>
         </div>
         </div>
+        {/* <div className={`${styles.paddingX} absolute
+      inset-0 top-[-200px] left-[600px] max-2-7xl mx-auto flex flex-row items-start gap-5`}> */}
         <ProfileCanvas />
+        {/* </div> */}
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 24, 10],
               }}
               transition={{
                 duration: 1.5,
@@ -60,7 +64,7 @@ const Hero = () => {
         </a>
       </div>
       <div className='mt-20 flex flex-wrap gap-10'>
-      <ComputersCanvas />
+      
       </div>
     </section>
   );

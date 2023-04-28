@@ -1,19 +1,58 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
-import { profile } from "../../assets";
 
-const Profile = () => {
+const Profile = ({ isMobile }) => {
   const profile = useGLTF("./profile.glb");
 
   return (
-    <primitive object={profile.scene} scale={2.5} position-y={0} rotation-y={0} />
+    <mesh>
+    <hemisphereLight intensity={0.20} />
+    <spotLight
+      position={[20, 10, 10]}
+      angle={0.12}
+      penumbra={1}
+      intensity={2}
+      castShadow
+      shadow-mapSize={1024}
+    />
+    <pointLight intensity={0.1} />
+    <primitive object={profile.scene} 
+      scale={isMobile ? 2.25 : 3.25} 
+      position={isMobile ? 0 : [0, -0.2, 0]} 
+      rotation-y={0}
+    />
+  </mesh>
+    
   );
 };
 
 const ProfileCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)");
+
+    // Set the initial value of the `isMobile` state variable
+    setIsMobile(mediaQuery.matches);
+
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <Canvas
       shadows
@@ -34,7 +73,7 @@ const ProfileCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Profile />
+        <Profile isMobile={isMobile} />
 
         <Preload all />
       </Suspense>
