@@ -15,7 +15,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#4aa7f3]">Hadi</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I'm Web Developer, User <br className='' /> interfaces, and FiveM Developer
+              I'm A Web Developer, User <br className='' /> interfaces, and FiveM Developer
           </p>
           <div className={`${styles.paddingX} absolute
       inset-0 top-[20px] left-[-1300px] max-2-7xl mx-auto flex flex-row items-start gap-5`}>
