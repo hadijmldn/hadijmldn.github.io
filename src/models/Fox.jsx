@@ -18,7 +18,7 @@ import scene from "../assets/3d/avatar.glb";
 export function Fox({ currentAnimation, ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF(scene);
-  const { animations } = useFBX("/src/assets/3d/Salute.fbx");
+  const { animations } = useFBX("/src/assets/3d/Waving.fbx");
   const { actions } = useAnimations(animations, group);
 
   // This effect will run whenever the currentAnimation prop changes
