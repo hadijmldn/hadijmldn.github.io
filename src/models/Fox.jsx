@@ -27,7 +27,7 @@ export function Fox({ currentAnimation, ...props }) {
     Object.values(actions).forEach((action) => action.play());
 
     if (actions[currentAnimation]) {
-      actions[currentAnimation].reset().play();
+      actions[currentAnimation].reset().stop();
     }
   }, [actions, currentAnimation]);
 
