@@ -27,6 +27,9 @@ import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 import authen from './authen.png'
+import indotribes from './indotribes.png'
+import lua from './lua.png'
+import laravel from './laravel.png'
 
 export {
     css,
@@ -58,4 +61,7 @@ export {
     soundon,
     soundoff,
     authen,
+    indotribes,
+    lua,
+    laravel,
 }

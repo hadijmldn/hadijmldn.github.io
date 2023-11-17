@@ -24,7 +24,10 @@ import {
     tailwindcss,
     threads,
     typescript,
-    authen
+    authen,
+    indotribes,
+    lua,
+    laravel,
 } from "../assets/icons";
 
 export const skills = [
@@ -69,6 +72,11 @@ export const skills = [
         type: "Animation",
     },
     {
+        imageUrl: lua,
+        name: "Lua",
+        type: "Animation",
+    },
+    {
         imageUrl: mui,
         name: "Material-UI",
         type: "Frontend",
@@ -103,6 +111,11 @@ export const skills = [
         name: "Tailwind CSS",
         type: "Frontend",
     },
+    {
+        imageUrl: laravel,
+        name: "laravel",
+        type: "Backend",
+    },
     // {
     //     imageUrl: typescript,
     //     name: "TypeScript",
@@ -111,19 +124,19 @@ export const skills = [
 ];
 
 export const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
+    // {
+    //     title: "React.js Developer",
+    //     company_name: "Starbucks",
+    //     icon: starbucks,
+    //     iconBg: "#accbe1",
+    //     date: "March 2020 - April 2021",
+    //     points: [
+    //         "Developing and maintaining web applications using React.js and other related technologies.",
+    //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //         "Implementing responsive design and ensuring cross-browser compatibility.",
+    //         "Participating in code reviews and providing constructive feedback to other developers.",
+    //     ],
+    // },
     // {
     //     title: "React Native Developer",
     //     company_name: "Tesla",
@@ -137,6 +150,19 @@ export const experiences = [
     //         "Participating in code reviews and providing constructive feedback to other developers.",
     //     ],
     // },
+    {
+        title: "Full stack Developer",
+        company_name: "Indotribes",
+        icon: indotribes,
+        iconBg: "#a2d2ff",
+        date: "Oct 2022 - Agust 2023",
+        points: [
+            "Developing and maintaining FiveM server using Lua and other related technologies.",
+            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Implementing responsive design and ensuring cross-browser compatibility.",
+            "Participating in code reviews and providing constructive feedback to other developers.",
+        ],
+    },
     {
         title: "Web Developer",
         company_name: "Shopify",
@@ -155,9 +181,9 @@ export const experiences = [
         company_name: "Authen Indonesia",
         icon: authen,
         iconBg: "#a2d2ff",
-        date: "Oct 2022 - Present",
+        date: "Agust 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
+            "Developing and maintaining FiveM server using Lua and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
             "Participating in code reviews and providing constructive feedback to other developers.",
