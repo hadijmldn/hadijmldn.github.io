@@ -13,13 +13,13 @@ import React, { useRef, useEffect } from "react";
 import { useGLTF, useAnimations, useFBX } from "@react-three/drei";
 
 import scene from "../assets/3d/avatar.glb";
-import anim from "../assets/3d/Salute.fbx";
+import anims from "../assets/3d/Salute.fbx";
 
 // 3D Model from: https://sketchfab.com/3d-models/fox-f372c04de44640fbb6a4f9e4e5845c78
 export function Fox({ currentAnimation, ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF(scene);
-  const { animations } = useFBX(anim);
+  const { animations } = useFBX(anims);
   const { actions } = useAnimations(animations, group);
 
   // This effect will run whenever the currentAnimation prop changes
